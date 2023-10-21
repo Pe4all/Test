@@ -1,0 +1,264 @@
+@font-face {
+    font-family: "Roboto-Regular";
+    src: local("Roboto-Regular"),
+     url("../../../../public/fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto-Medium";
+    src: local("Roboto-Medium"),
+     url("../../../../public/fonts/Roboto-Medium.ttf") format("truetype");
+}
+
+// Убрать дефолтные стили с инпутов
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input{
+    padding: 0 15px;
+    border-radius: 8px;
+    background-color: #EFEFEF;
+}
+
+.custom{
+    width: 100%;
+    height: 45px;
+    background-color: var(--select-color);
+    border: 1px solid;
+    border-radius: 8px;
+    border-color: var(--text-color);
+    margin-bottom: 15px;
+    color: var(--text-color);
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.select:hover{
+    cursor: pointer;
+}
+
+.open{
+    border-bottom: var(--border-bottom);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.custom.open .more {
+    transform: rotate(180deg);
+    transition: transform 0.25s ease;
+}
+
+.select{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: var(--text-color);
+    font-family: "Roboto-Regular", "Helvetica";
+    padding: 0px 20px 0px 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.formSelect{
+    margin-top: 35px;
+    margin-bottom: 20px;
+    width: 110px;
+    height: 45px;
+    background-color: #efefef;
+    border: none;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.openForm{
+    height: 130px;
+    align-items: start;
+    padding-top: 14px;
+}
+
+.more * {
+    fill: var(--more-color);
+    width: 10px;
+    height: 6px;
+}
+
+.invisible{
+    display: none;
+}
+
+.openFormYear{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.line{
+    margin-top: 17px;
+}
+
+.line * {
+    stroke: var(--line-color);
+}
+
+.delete{
+    margin-right: 11px;
+    width: 9px;
+    height: 9px;
+    margin-left: 10px;
+    height: 50%;
+}
+
+.options{
+    box-sizing: border-box;
+    border: 1px solid var(--text-color);
+    border-top: none;
+    background-color: var(--select-color);
+    width: calc(100% + 2px);
+    position: absolute;
+    top: 43px;
+    left: -1px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    z-index: 2;
+    list-style-type: none;
+    position: absolute;
+    top: 44px;
+    overflow: hidden;
+    display: none;
+    overflow-y: auto; /* Добавляем скроллбар */
+    max-height: 355px; 
+}
+  
+.options::-webkit-scrollbar {
+    width: 9px; /* Ширина скроллбара */
+}
+  
+.options::-webkit-scrollbar-thumb {
+    background-color: #888; /* Цвет ползунка скроллбара */
+    border-radius: 10px;
+}
+  
+.options::-webkit-scrollbar-track {
+    background-color: rgba(134, 134, 134, 0.1); /* Цвет трека скроллбара */
+    opacity: 0;
+}
+
+
+.visible{
+    display: block ;
+}
+
+.options > li{
+	cursor: pointer;
+    padding: 10px 0 10px 30px;
+    font-family: "Roboto-Medium",  "Helvetica";
+    font-size: 16px;
+    font-weight: 500;
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    overflow: hidden;
+}
+
+.spanText{
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    overflow: hidden;
+    width: 100%;
+    text-align: left;
+}
+
+li:first-child{
+	margin-top: 10px;
+}
+
+li:last-child{
+	margin-bottom: 35px;
+}
+
+li:hover{
+	background-color: var(--text-color);
+    color: var(--background-color);
+}
+
+.hidden {
+    display: none;
+}
+
+.formInput{
+    display: block;
+    color: #000000;
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+    .custom{
+        margin-right: 20px;
+        width: calc( 25% - 15px);
+    }
+    .custom:last-child{
+        margin-right: 0 ;
+    }
+    .select{
+        padding: 0px 18px 0px 15px;
+    }
+    .options > li{
+        padding-left: 15px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .options > li{
+        padding-left: 22px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .formSelect{
+        width: 95px;
+        margin-top: 20px;
+    }
+    .line{
+        margin: 44px 0 41px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .openForm{
+        height: 205px;
+    }
+    .openFormYear{
+        flex-direction: column;
+    }
+    .formSelect{
+        margin: 0;
+    }
+    .line{
+        margin: 15px 0;
+    }
+}
+
+@media (min-width: 100px) and (max-width: 319px) {
+    .openForm{
+        height: 205px;
+    }
+    .openFormYear{
+        flex-direction: column;
+    }
+    .formSelect{
+        margin: 0;
+    }
+    .line{
+        margin: 15px 0;
+    }
+}

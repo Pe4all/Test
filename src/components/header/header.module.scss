@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none; 
+}
+
+button{
+    border: none;
+}
+
+body{
+    transition: 0.1s ease-in;
+    background-color: var(--background-color); 
+}
+
+.headerTop{
+    margin: 25px 0;
+    box-sizing: content-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerButtons{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.switchTheme * {
+    fill: var(--text-color);
+}
+
+@media (min-width: 768px) {
+    .headerButtons{
+        flex-direction: row;
+    }
+    .headerTop{
+        margin: 35px 0;
+    }
+}

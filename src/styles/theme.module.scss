@@ -1,0 +1,51 @@
+/* Переменные для темы */
+:root {
+    --background-color-light: #ffffff;
+    --text-color-light: #000000;
+    --select-color-light: #ffffff;
+    --border-bottom-light: 1px solid rgba(17, 17, 17, .3);
+    --more-color-light: black; 
+    --line-color-light: black;
+    --pagination-color-light: #EDEDED;
+
+    --background-color-dark: #000000;
+    --text-color-dark: #ffffff;
+    --select-color-dark: #0C0C0C;
+    --border-bottom-dark: 1px solid #FFFFFF4D;
+    --more-color-dark: rgb(255, 255, 255);
+    --line-color-dark: #FFFFFF4D;
+    --pagination-color-dark: #FFFFFF4D;
+
+
+    /* Состояние стилей по умолчанию */
+    --background-color: var(--background-color-dark);
+    --text-color: var(--text-color-dark);
+    --select-color: var(--select-color-dark);
+    --border-bottom: var(--border-bottom-dark);
+    --more-color: var(--more-color-dark);
+    --line-color: var(--line-color-dark);
+    --pagination-color: var(--pagination-color-dark);
+}
+
+/* Стили для светлой темы */
+.lightTheme {
+    --background-color: var(--background-color-light);
+    --text-color: var(--text-color-light);
+    --select-color: var(--select-color-light);
+    --border-bottom: var(--border-bottom-light);
+    --more-color: var(--more-color-light);
+    --line-color: var(--line-color-light);
+    --pagination-color: var(--pagination-color-light)
+}
+
+/* Стили для темной темы */
+.dark-theme {
+    --background-color: var(--background-color-dark);
+    --text-color: var(--text-color-dark);
+    --select-color: var(--select-color-dark);
+    --border-bottom: var(--border-bottom-dark);
+    --more-color: var(--more-color-dark);
+    --line-color: var(--line-color-dark);
+    --pagination-color: var(--pagination-color-dark)
+}
+

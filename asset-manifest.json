@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/Pe4all/Test/static/css/main.e6348db0.css",
-    "main.js": "/Pe4all/Test/static/js/main.35603ac3.js",
+    "main.js": "/Pe4all/Test/static/js/main.a1d2c143.js",
     "static/media/Roboto-Medium.ttf": "/Pe4all/Test/static/media/Roboto-Medium.2699aefade440f0e338f.ttf",
     "static/media/Roboto-Regular.ttf": "/Pe4all/Test/static/media/Roboto-Regular.160d7a6ac26376e5e977.ttf",
     "static/media/Roboto-Bold.ttf": "/Pe4all/Test/static/media/Roboto-Bold.35eab922fdbe4b5324d4.ttf",
     "static/media/Roboto-Light.ttf": "/Pe4all/Test/static/media/Roboto-Light.67102731a93fd827b382.ttf",
-    "static/media/theme.svg": "/Pe4all/Test/static/media/theme.7efac3cbec09ed1764a502709e1ae415.svg",
-    "static/media/logo.svg": "/Pe4all/Test/static/media/logo.341392e0c316e17646ddea30081fb065.svg",
-    "static/media/doubleArrow.svg": "/Pe4all/Test/static/media/doubleArrow.37f98ce806ea44f34d3715fc7e7c0d2a.svg",
-    "static/media/delete.svg": "/Pe4all/Test/static/media/delete.f7af1d3395b4be55c5d3d1e8d6514655.svg",
-    "static/media/arrow.svg": "/Pe4all/Test/static/media/arrow.bdf972b1e0042be7541ffa87976ce098.svg",
+    "static/media/theme.svg": "/Pe4all/Test/static/media/theme.cbbced2826c8ebdb046535df46b8e1d9.svg",
+    "static/media/logo.svg": "/Pe4all/Test/static/media/logo.eb77c1a7c9dea0398f023a74675a2be4.svg",
+    "static/media/doubleArrow.svg": "/Pe4all/Test/static/media/doubleArrow.9b0c07d624d133f34790efdad55a2a80.svg",
+    "static/media/delete.svg": "/Pe4all/Test/static/media/delete.a4d17d88b40bca684ef3501d89fb7969.svg",
+    "static/media/arrow.svg": "/Pe4all/Test/static/media/arrow.ba59d639a8c03bce36a3b456ad3c2003.svg",
     "index.html": "/Pe4all/Test/index.html",
-    "static/media/more.svg": "/Pe4all/Test/static/media/more.41791164a1be55a336101d24280b52e2.svg",
-    "static/media/line.svg": "/Pe4all/Test/static/media/line.5c85fbf7d39466d5230557904847164f.svg",
+    "static/media/more.svg": "/Pe4all/Test/static/media/more.28fd83a1ffa2798099f6ac760e16b052.svg",
+    "static/media/line.svg": "/Pe4all/Test/static/media/line.87e21f9184daaef3cea5fa442b45fb96.svg",
     "main.e6348db0.css.map": "/Pe4all/Test/static/css/main.e6348db0.css.map",
-    "main.35603ac3.js.map": "/Pe4all/Test/static/js/main.35603ac3.js.map"
+    "main.a1d2c143.js.map": "/Pe4all/Test/static/js/main.a1d2c143.js.map"
   },
   "entrypoints": [
     "static/css/main.e6348db0.css",
-    "static/js/main.35603ac3.js"
+    "static/js/main.a1d2c143.js"
   ]
 }

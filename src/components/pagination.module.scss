@@ -1,0 +1,113 @@
+@font-face {
+    font-family: "Roboto-Medium";
+    src: local("Roboto-Medium"),
+     url("../../../public/fonts/Roboto-Medium.ttf") format("truetype");
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.pagination{
+    width: 100%;
+    margin-bottom: 34px;
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: "Roboto-Medium", Helvetica;
+   
+}
+
+.arrowButton{
+    width: 41px;
+    height: 41px;
+    box-sizing: border-box;
+    border: 1px solid var(--pagination-color);
+}
+
+.arrowButton:hover,
+.pageButton:hover{
+    background-color: var(--pagination-color);
+}
+
+.pageButton{
+    width: 41px;
+    height: 41px;
+    box-sizing: border-box;
+    border: none;
+    border-top: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+    border-right: 1px solid var(--text-color);
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.arrowButton:first-child{
+    border-right: none;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.arrowButton:last-child{
+    border-left: none;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.arrowButton:nth-last-child(-n+2){
+    border-left: none;
+}
+
+.colorArrow * {
+   fill: var(--line-color);
+}
+
+.rotateArrow {
+    rotate:  180deg;
+}
+
+.active {
+    color: var(--select-color);
+    background-color: var(--text-color);
+}
+
+.active:hover{
+    background-color: var(--text-color);
+}
+
+.enabledArrow * {
+    fill: var(--text-color);
+    fill-opacity: 1;
+}
+
+.enabledButton{
+    border: 1px solid var(--text-color);
+}
+
+@media (min-width: 768px) {
+    .pagination{
+        margin-bottom: 54px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .pagination{
+        margin-bottom: 62px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .pagination{
+        margin-bottom: 97px;
+    }
+}
